@@ -1,0 +1,269 @@
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  padding-bottom: 50px;
+}
+.home-cointainer-background {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  border-bottom: #2f5d50 solid 10px;
+}
+.home-background {
+  width: 100%;
+  z-index: 0;
+  filter: brightness(0.4);
+}
+.container-home-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-name {
+  color: #fff;
+  font-size: 70px;
+  font-family: 'Audiowide', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container-home-name p {
+  font-size: 20px;
+  color: #b9b9b9;
+}
+.home-profile {
+  position: absolute;
+  bottom: -200px;
+  width: 400px;
+  z-index: 0;
+  border: 5px solid #fff;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.rectangule {
+  background: #2f5d50;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  left: -30%;
+  transform: rotate(45deg);
+}
+
+.home-container {
+  z-index: 100;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+}
+.home-me-img {
+  width: 550px;
+  z-index: 100;
+  position: relative;
+}
+
+.home-container-text {
+  margin-top: 200px;
+  width: 600px;
+  font-size: 40px;
+  color: #000;
+}
+.home-container-text h2 {
+  margin-bottom: 30px;
+}
+.home-container-text p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.home-container-text .p-02 {
+  font-size: 20px;
+  color: #000;
+}
+
+.aboutMe {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background: #faf3e3;
+  z-index: 50;
+  padding: 0;
+}
+.aboutMe-title {
+  margin-top: 70px;
+  color: #3f7566;
+}
+.aboutMe-container {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+.aboutMe-container-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  z-index: 110;
+  width: 500px;
+}
+
+.aboutMe-container-description img {
+  top: auto;
+}
+.aboutMe-container-description p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.aboutMe-motivational {
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #3f7566;
+}
+.container-aboutMe-img {
+  position: relative;
+}
+.aboutMe-rectangule {
+  position: absolute;
+  bottom: 0;
+  right: 230px;
+  z-index: 10;
+  width: 1300px;
+  height: 1200px;
+  background: #2d6254;
+  top: -250px;
+  transform: rotate(45deg);
+}
+
+.skills {
+  background: #3a7d6b;
+  padding: 60px 20px;
+}
+
+.skills h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  max-width: 1400px;
+  margin: auto;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.skill-card {
+  background: #faf3e3;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid transparent;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: #fff;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ICONO */
+.icon {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.skill-card h3 {
+  font-size: 1rem;
+  color: #3a7d6b;
+  font-weight: 600;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  background: #faf3e3;
+}
+
+.experience h2 {
+  margin-bottom: 30px;
+}
+
+.experience-card {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+/* Lado izquierdo */
+.experience-images {
+  position: relative;
+}
+
+.experience-images img {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  width: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+  position: absolute;
+}
+
+/* Lado derecho */
+.experience-info {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-header h3 {
+  margin: 0;
+  color: #2f5d50;
+  font-size: 25px;
+}
+
+.time {
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+.company {
+  font-weight: 500;
+  margin: 5px 0 15px;
+}
+
+.description {
+  line-height: 1.5;
+}

@@ -1,0 +1,104 @@
+/* =========================
+   CSS RESET MODERNO
+   ========================= */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Eliminar márgenes por defecto */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Mejorar renderizado de texto */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Tipografía base */
+body {
+  min-height: 100vh;
+
+  text-rendering: optimizeSpeed;
+  font-family: system-ui, sans-serif;
+}
+
+/* Quitar estilos de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Quitar estilos de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imágenes y multimedia responsivos */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Formularios más consistentes */
+section {
+  padding: 100px 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 50px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Botones clickeables */
+button {
+  cursor: pointer;
+}
+
+/* Evitar overflow de textos */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Tablas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
