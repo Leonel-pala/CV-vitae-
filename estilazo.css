@@ -20,16 +20,17 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 200px;
+  top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .home-name {
   color: #fff;
-  font-size: 70px;
+  font-size: 4rem;
   font-family: 'Audiowide', sans-serif;
   font-weight: 400;
+  width: max-content;
   font-style: normal;
 }
 .container-home-name p {
@@ -220,6 +221,9 @@
   margin-bottom: 100px;
   align-items: center;
 }
+.experience-card.reverse {
+  flex-direction: row-reverse;
+}
 
 /* Lado izquierdo */
 .experience-images {
@@ -266,4 +270,200 @@
 
 .description {
   line-height: 1.5;
+}
+/* =========================
+   MOBILE (hasta 768px)
+   ========================= */
+@media (max-width: 768px) {
+  /* HOME */
+  .home {
+    min-height: auto;
+    padding-bottom: 100px;
+  }
+
+  .home-name {
+    top: 50px;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .container-home-name {
+    top: 50px;
+    width: 90%;
+  }
+
+  .container-home-name p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .home-profile {
+    width: 180px;
+    bottom: -90px;
+  }
+
+  .home-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .home-container-text {
+    margin-top: 120px;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .home-container-text h2 {
+    font-size: 28px;
+  }
+
+  .home-container-text p {
+    font-size: 16px;
+  }
+
+  /* ABOUT ME */
+  .aboutMe-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutMe-container-description {
+    width: 90%;
+    text-align: center;
+  }
+
+  .home-me-img {
+    width: 250px;
+  }
+
+  .aboutMe-rectangule {
+    display: none; /* esto rompe mucho en mobile */
+  }
+
+  /* SKILLS */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* EXPERIENCE */
+  .experience-card {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .experience-card.reverse {
+    flex-direction: column;
+  }
+  .experience-info {
+    width: 90%;
+    text-align: center;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .experience-images {
+    position: relative;
+    width: 100% !important;
+    height: auto !important;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .experience-images img {
+    position: static; /* clave: sacamos el absolute */
+    width: 45% !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .home-container-text {
+    margin-top: 50px;
+  }
+  .container-home-name {
+    top: none;
+    bottom: 0;
+    text-align: left;
+    left: 120px;
+    width: 200px;
+    align-items: unset;
+    transform: unset;
+  }
+  .home-name {
+    font-size: 20px;
+  }
+  .container-home-name p {
+    text-align: left;
+    font-size: 12px;
+  }
+  .home-profile {
+    position: absolute;
+    bottom: -50px;
+    width: 100px;
+    z-index: 0;
+    border: 5px solid #fff;
+    border-radius: 999px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    left: 10px;
+    transform: unset;
+  }
+}
+
+.contacto {
+  background-color: #2f5d50;
+  color: #f2e8d5;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contacto h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.intro {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background-color: #f2e8d5;
+  color: #2f5d50;
+  padding: 20px;
+  border-radius: 12px;
+  width: 220px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  background-color: #e8dcc6;
+}
+
+.contact-card h3 {
+  margin-bottom: 5px;
+  font-size: 2rem;
+}
+
+.cierre {
+  margin-top: 30px;
+  font-size: 0.95em;
+  opacity: 0.9;
 }
